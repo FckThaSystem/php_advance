@@ -1,4 +1,7 @@
 <?php
+namespace hillel\auto;
+
+use hillel\auto\MovableInterface as MovableInterface;
 
 abstract class Car implements MovableInterface
 {
@@ -10,12 +13,27 @@ abstract class Car implements MovableInterface
 
     private $engineStart;
 
+    public const TYPE_SEDAN = 'SEDAN';
+
+    public const TYPE_HATCHBACK = 'HATCHBACK';
+
+    public const TYPE_COUPE = 'COUPE';
+
+    public const TYPE_LIFT_BACK = 'LIFT-BACK';
+
     public function __construct($maxSpeed, $speed = 0)
     {
         $this->maxSpeed = $maxSpeed;
     }
     public function getCountry(){
         return self::$country;
+    }
+    public function getType(): array
+    {
+        return array(self::TYPE_SEDAN,
+                     self::TYPE_HATCHBACK,
+                     self::TYPE_COUPE,
+                     self::TYPE_LIFT_BACK);
     }
     public function setCountry($country){
         self::$country = $country;

@@ -1,5 +1,9 @@
 <?php
 
+namespace hillel\auto;
+
+use hillel\auto\Car as Car;
+
 class Bus extends Car
 {
     public function start(){

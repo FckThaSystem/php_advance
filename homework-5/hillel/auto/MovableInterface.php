@@ -1,5 +1,6 @@
 <?php
 
+namespace hillel\auto;
 
 interface MovableInterface
 {
