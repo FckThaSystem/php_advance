@@ -1,0 +1,13 @@
+{
+    "name": "rostyslav/my-new-project",
+    "description": "ny-new-project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rostyslav.kibkalo"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
