@@ -6,12 +6,23 @@ include 'ClassLoader.php';
 
 // ** static methods
 
-\hillel\auto\Bus::setCountry('Ukraine');
-echo \hillel\auto\Bus::getCountry() . PHP_EOL;
+$engine = new \hillel\auto\Engine('diesel', 5.2, 400);
 
-// ** const
-$bus = new \hillel\auto\Bus(120);
+$bus = new \hillel\auto\Bus(120, $engine);
 
-foreach ($bus->getType() as $type){
-    echo $type . PHP_EOL;
-}
+// композиция
+echo $bus->getBodyStats() . PHP_EOL;
+
+// агрегация
+echo $bus->getEngineStats() . PHP_EOL;
+
+
+
+// класс Driver
+$driver = new \hillel\auto\Driver('Ivan');
+
+$truck = new \hillel\auto\Truck(130, $engine);
+
+$driver->driveBus($bus);
+
+$driver->driveTruck($truck);

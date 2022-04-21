@@ -13,6 +13,10 @@ abstract class Car implements MovableInterface
 
     private $engineStart;
 
+    protected $engine;
+
+    protected $body;
+
     public const TYPE_SEDAN = 'SEDAN';
 
     public const TYPE_HATCHBACK = 'HATCHBACK';
@@ -21,9 +25,14 @@ abstract class Car implements MovableInterface
 
     public const TYPE_LIFT_BACK = 'LIFT-BACK';
 
-    public function __construct($maxSpeed, $speed = 0)
+    public function __construct($maxSpeed, Engine $engine, $speed = 0)
     {
+        $this->engine = $engine;
         $this->maxSpeed = $maxSpeed;
+    }
+
+    public function getEngineStats(){
+        return $this->engine->getEngineStats();
     }
     public function getCountry(){
         return self::$country;

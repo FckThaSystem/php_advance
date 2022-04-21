@@ -6,6 +6,15 @@ use hillel\auto\Car as Car;
 
 class Bus extends Car
 {
+    public function __construct($maxSpeed, Engine $engine, $speed = 0)
+    {
+        parent::__construct($maxSpeed, $engine, $speed);
+        $this->body = new Body('green', 'bus', 22, 3.5);
+    }
+
+    public function getBodyStats(){
+        return $this->body->getBodyStats();
+    }
     public function start(){
         echo 'Bus started engine' . PHP_EOL;
         $this->setEngineStart(true);
