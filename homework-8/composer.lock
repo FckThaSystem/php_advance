@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d11bb39737384ad1ada1c4430ff258a3",
+    "packages": [
+        {
+            "name": "rostyslav/php-calc",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FckThaSystem/PhpCalc.git",
+                "reference": "5df9a599a73bc78f28243e84dd28c6e57e1e1d61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FckThaSystem/PhpCalc/zipball/5df9a599a73bc78f28243e84dd28c6e57e1e1d61",
+                "reference": "5df9a599a73bc78f28243e84dd28c6e57e1e1d61",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpCalc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rostyslav.Kibkalo",
+                    "email": "rostislav.kibkalo@gmail.com"
+                }
+            ],
+            "description": "php-calc",
+            "support": {
+                "issues": "https://github.com/FckThaSystem/PhpCalc/issues",
+                "source": "https://github.com/FckThaSystem/PhpCalc/tree/1.0.1"
+            },
+            "time": "2022-04-25T18:06:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

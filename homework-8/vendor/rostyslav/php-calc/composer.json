@@ -1,0 +1,19 @@
+{
+    "name": "rostyslav/php-calc",
+    "description": "php-calc",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpCalc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rostyslav.Kibkalo",
+            "email": "rostislav.kibkalo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

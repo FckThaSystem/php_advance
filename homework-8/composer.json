@@ -1,0 +1,16 @@
+{
+    "name": "rostyslav/homework-8",
+    "description": "homework-8",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rostyslav.Kibkalo",
+            "email": "rostislav.kibkalo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rostyslav/php-calc": "^1.0.0"
+    }
+}
