@@ -1,0 +1,21 @@
+{
+    "name": "rostyslav/homework-9",
+    "description": "logger",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "logger\\": "logger/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rostyslav.Kibkalo",
+            "email": "rostislav.kibkalo@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "psr/log": "^1.1"
+    }
+}
